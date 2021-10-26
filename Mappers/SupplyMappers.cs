@@ -26,7 +26,7 @@ namespace buildxact_supplies.Mappers
             {
                 Id = data.Id.ToString(),
                 Description = data.Description,
-                UnitPrice = data.PriceInCents,
+                UnitPrice = CurrencyConverter.Convert("USD", "AUD", data.PriceInCents / 100),
                 OriginalCurrency = "USD",
                 DisplayedCurrency = "AUD",
                 Unit = data.Uom,
