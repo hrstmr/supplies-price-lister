@@ -9,7 +9,7 @@ namespace buildxact_supplies.Entities
     {
         //name attributes to map the json field to MegaCorpSupply property
         [JsonProperty("id")]
-        public Guid Id { get; set; } //mentioned in the readme that this should be unique hence Guid
+        public int Id { get; set; } //mentioned in the readme that this should be unique hence Guid
         [JsonProperty("description")]
         public string Description { get; set; }
         [JsonProperty("uom")]
