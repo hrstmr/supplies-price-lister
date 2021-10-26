@@ -28,6 +28,12 @@ namespace buildxact_supplies.Helper
                 }
             };
         }
+        // this can be modified if we decide to put all the file in one folder
+        public static string GetFileLocation()
+        {
+            var path = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent;
+            return path.FullName;
+        }
 
     }
 }
