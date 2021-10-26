@@ -7,7 +7,7 @@ namespace buildxact_supplies.Entities
 {
     public class MegaCorpPartner
     {
-        //name attributes to map the csv field to MegaCorpPartner property
+        //name attributes to map the json field to MegaCorpPartner property
         [JsonProperty("name")]
         public string Name { get; set; }
         [JsonProperty("partnerType")]
