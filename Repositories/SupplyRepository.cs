@@ -27,6 +27,7 @@ namespace buildxact_supplies.Repositories
             return AllSupplies;
         }
 
+        //create searchRequest Model to use instead of filePath
         public Task<IEnumerable<Supply>> GetFromFile(string filePath)
         {
             throw new NotImplementedException();
